@@ -1,0 +1,217 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #f3e7e9, #e3eeff);
+}
+
+h2 {
+    color: #333;
+    text-shadow: 1px 1px 2px #fff, 0 0 25px #999, 0 0 5px #666;
+    transition: 0.3s;
+}
+
+h2:hover {
+    transform: scale(1.2);
+}
+
+.calculator {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    overflow: hidden;
+}
+
+.display {
+    background: #333;
+    color: #ffffff;
+    font-size: 2.5em;
+    padding: 30px;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 15px;
+    box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background: #f3f3f3;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn {
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #dcdcdc, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+    box-shadow: 3px 3px 6px #dcdcdc, -3px -3px 6px #ffffff;
+}
+
+.btn:active {
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 5px #4c4c4c, inset -2px -2px 5px #4a4a4a;
+}
+
+.btn[data-value="/"],
+.btn[data-value="*"],
+.btn[data-value="-"],
+.btn[data-value="C"],
+.btn[data-value="+"] {
+    background: #4CAF50;
+    color: white;
+    box-shadow: 2px 2px 5px #464746, -2px -2px 5px #66BB6A;
+}
+
+.btn[data-value="/"]:hover,
+.btn[data-value="*"]:hover,
+.btn[data-value="-"]:hover,
+.btn[data-value="C"]:hover,
+.btn[data-value="+"]:hover {
+    background: #3e3f3e;
+}
+
+#equals {
+    background: #F44336;
+    color: white;
+    grid-column: span 3;
+    box-shadow: 2px 2px 5px #383838, -2px -2px 5px #EF5350;
+}
+
+#equals:hover {
+    background: #E53935;
+}
+
+.btn[data-value="AC"] {
+    background: #FF9800;
+    color: white;
+    box-shadow: 2px 2px 5px #353535, -2px -2px 5px #FFB74D;
+}
+
+.btn[data-value="AC"]:hover,
+.btn[data-value="C"]:hover {
+    background: #FB8C00;
+}
